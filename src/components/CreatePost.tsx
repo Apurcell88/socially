@@ -27,7 +27,7 @@ const CreatePost = () => {
     try {
       const result = await createPost(content, imageUrl);
 
-      if (result.success) {
+      if (result?.success) {
         // reset the form
         setContent("");
         setImageUrl("");
